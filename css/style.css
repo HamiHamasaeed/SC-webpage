@@ -1,0 +1,257 @@
+/* general changes */
+body{
+font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h3{
+  font-size: 30px;
+}
+
+/* general changes */
+
+/* navbar */
+#navigation-bar{
+  position: absolute;
+  z-index: 60;
+  width: 100%;
+}
+
+.navbar{
+  border-bottom: #4B0083 solid 5px;
+}
+
+.navbar-brand{
+  color: white !important;
+  font-size: 24px !important;
+}
+
+
+.nav-link{
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+  color: lightblue !important;
+}
+/* navbar */
+
+
+/* header sections */
+#header{
+  background: url('../images/header4.jpg')no-repeat;
+  position: relative;
+  top:67px;
+  background-size: cover;
+  height: 100vh;
+}
+
+h1{
+margin-top: 120px !important;
+color: white;
+font-family: 'MuseoModerno', cursive; !important;
+}
+
+#header .overlay{
+  background-color: rgba(72,61,139, 0.2);
+    height: 100vh;
+}
+
+.btn-outline-secondary{
+  cursor: pointer;
+}
+
+#header .btn-outline-secondary:hover{
+  background-color: #7E6EF7 !important;
+}
+/* header section */
+
+/* feature section */
+#feature{
+  margin-top: 30px;
+}
+#feature i{
+    color:  #7E6EF7 ;
+    cursor: pointer;
+}
+#feature i:hover{
+color:#4B0083;
+}
+
+#feature h3:hover{
+  color:#4B0083;
+  cursor: pointer;
+}
+
+/* feature section */
+
+
+/* our work section */
+#our-work{
+
+  background: url(../images/Work.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+#our-work i{
+  color:  #7E6EF7 ;
+}
+
+#our-work i:hover{
+  color:  #4B0083 ;
+}
+/* our work section */
+
+
+/* history section */
+#history{
+  background-color: #E6E6FA;
+}
+
+.history-text{
+  background-color: white;
+  height: 400px;
+  margin-right: -50px;
+  padding: 30px;
+
+}
+
+.history-img{
+  margin-top: 90px;
+  margin-left: 10px;
+  z-index: 50;
+  position: relative;
+
+}
+/* history section */
+
+/* gallery section */
+#galley .col-md-3{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.imageContainer{
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.imgOverlay{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(102, 51, 153, 0.0);
+  transition: .5s ease;
+}
+
+.imageContainer:hover .imgOverlay{
+background-color: rgb(102, 51, 153, 0.3)
+}
+
+.imgText{
+color: white;
+font-weight: bold;
+position: absolute;
+display: none;
+}
+
+.imageContainer:hover .imgText{
+display: block;
+
+}
+
+/* gallery section */
+
+/* footer */
+#page-footer{
+  background:black;
+  width: 100%
+}
+
+#page-footer .container{
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social{
+  margin: 20px;
+}
+
+.social a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.content h2{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#page-footer .container .content{
+  color: white;
+  padding: 10px 20px;
+}
+.second{
+  margin-left: 100px;
+}
+/* footer */
+
+@media screen and (max-width: 1400px){
+  .history-text {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .history-text {
+    height: 340px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .history-text {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .history-img{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .history-text {
+    height: 320px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .history-img{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .history-text {
+    height: 350px;
+    width: 100%;
+
+  }
+}
